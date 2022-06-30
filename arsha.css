@@ -1,4 +1,7 @@
 @import "reset.css";
+html {
+  font-family: "Open Sans", sans-serif;
+}
 
 header {
   position: fixed;
@@ -60,4 +63,51 @@ header {
 #header-navbar ul li:last-child a {
   position: relative;
   left: 15px;
+}
+
+#header-banner {
+  display: flex;
+  height: 630px;
+  background-color: rgb(55, 81, 126);
+  padding: 100px;
+}
+
+#header-banner > div {
+  display: flex;
+  justify-content: center;
+}
+
+#header-decription {
+  width: 600px;
+  justify-content: center;
+  padding-top: 120px;
+  padding-left: 60px;
+}
+
+#header-decription p:first-child {
+  font: bold;
+  font-size: 45px;
+  color: white;
+}
+
+#header-decription p:nth-child(2) {
+  padding-top: 10px;
+  padding-left: 3px;
+  font-size: 20px;
+  color: rgb(174, 185, 203);
+}
+
+#header-image {
+  width: 600px;
+  text-align: center;
+}
+
+#header-banner-button {
+  padding-top: 50px;
+  font-size: 18px;
+  color: white;
+}
+
+#header-banner-button a {
+  margin-right: 20px;
 }
