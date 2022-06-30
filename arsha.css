@@ -1,1 +1,63 @@
 @import "reset.css";
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 15px 0px;
+  display: flex;
+  height: 72.5px;
+  background-color: rgb(55, 81, 126);
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  margin: 0px 160px;
+  padding: 0px 15px;
+}
+
+#header-logo {
+  width: 300px;
+  font-size: 30px;
+  color: white;
+}
+
+#header-navbar {
+  display: flex;
+  width: 1200px;
+  position: relative;
+}
+
+#header-navbar ul {
+  display: flex;
+}
+
+#header-navbar ul li {
+  font-size: 16px;
+  color: white;
+  padding: 10px 0px 10px 30px;
+}
+
+#header-navbar ul li:first-child {
+  color: rgb(68, 156, 204);
+}
+
+#header-navbar ul li:last-child {
+  padding: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#header-navbar ul li:last-child {
+  width: 120px;
+  margin-left: 20px;
+  border: 2px solid;
+  border-radius: 2em;
+  border-color: rgb(71, 178, 228);
+}
+
+#header-navbar ul li:last-child a {
+  position: relative;
+  left: 15px;
+}
