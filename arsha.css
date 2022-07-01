@@ -904,7 +904,7 @@ h6 {
 
 #why-us input[id*="check"] + label + div {
   max-height: 0;
-  transition: all 0.35s;
+  transition: all 1s;
   overflow: hidden;
 }
 
@@ -934,7 +934,6 @@ h6 {
 #why-us .why-us-img img {
   max-width: 100%;
   height: auto;
-
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
