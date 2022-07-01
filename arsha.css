@@ -1,13 +1,18 @@
 @import "reset.css";
 @import "variables.css";
 
+/* About us ~ service 위까지 */
 * {
     box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--main-font);
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
 }
+
+
 
 body {
     font-family: var(--body-font);
@@ -23,9 +28,10 @@ body {
 
 section {
     padding: 60px 0;
+    overflow: hidden;
 }
 
-p {
+#about p {
     margin-top: 0;
     margin-bottom: 1rem;
 }
@@ -38,6 +44,7 @@ p {
 
 .row>* {
     max-width: 100%;
+    padding: 0 12px 0 12px;
 }
 
 .section-title {
@@ -55,6 +62,46 @@ p {
     color: var(--first-color);
 }
 
+.section-title h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: var(--second-color);
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+#about .left-content li {
+    position: relative;
+    padding-left: 28px;
+}
+
+#about .left-content li + li {
+    margin-top: 10px;
+}
+
+.iconify {
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    font-size: 20px;
+    color: var(--second-color);
+    margin-right: 10px;
+}
+
 .btn-learn-more {
     font-family: var(--point-font);
     font-weight: 500;
@@ -65,11 +112,198 @@ p {
     border-radius: 4px;
     transition: 0.3s;
     line-height: 1;
-    color: var(--second-color);
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
     margin-top: 6px;
     border: 2px solid var(--second-color);
+}
+
+.right-content>a {
+    color: var(--second-color);
+}
+
+#why-us {
+    background-color: var(--background-color);
+}
+
+#why-us p {
+    margin-bottom: 1rem;
+    font-size: 15px;
+    color: var(--gray-4);
+}
+
+#why-us strong {
+    font-weight: bold;
+}
+
+#why-us .content {
+    padding: 60px 100px 0 100px;
+}
+
+#why-us .left-content li {
+    padding: 20px;
+    background: #fff;
+    border-radius: 4px;
+}
+
+#why-us .content h3 {
+    font-weight: 400;
+    font-size: 34px;
+    color: var(--first-color);
+}
+
+#why-us .accordion-list {
+    padding: 0 100px 60px 100px;
+}
+
+#why-us .accordion-list ul {
+    padding: 0;
+    list-style: none;
+}
+
+#why-us .accordion-list li {
+    padding: 20px;
+    background: #fff;
+    border-radius: 4px;
+}
+
+#why-us input[id*="check"] {
+    display: none;
+}
+
+#why-us input[id*="check"] + label {
+    display: block;
+    padding-right: 30px;
+    cursor: pointer;
+    position: relative;
+    font-family: var(--point-font);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+#why-us input[id*="check"] + label:hover{
+    color: var(--second-color);
+}
+
+#why-us i {
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#why-us .accordion-list span {
+    color: var(--second-color);
+    font-weight: 600;
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+
+#why-us .accordion-list li + li {
+    margin-top: 15px;
+}
+
+#why-us input[id*="check"] + label + div {
+    max-height: 0;
+    transition: all .35s;
+    overflow: hidden;
+}
+
+#why-us input[id*="check"] + label + div p {
+    display: inline-block;
+    padding: 10px 0 0 0;
+}
+
+#why-us input[id*="check"]:checked + label {
+    color: var(--second-color);
+}
+
+#why-us input[id*="check"]:checked + label + div {
+    max-height: 500px;
+}
+
+#why-us input[id*="check"]:checked + label i {
+    transform: rotate(180deg);
+}
+
+#why-us .why-us-img {
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+  }
+  
+#why-us .why-us-img img {
+   max-width: 100%;
+    height: auto;
+
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+
+/* skills */
+#skills p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+#skills .skills-img {
+    max-width: 100%;
+    height: auto;
+}
+
+#skills .right-content h3 {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--first-color);
+}
+
+#skills p {
+    margin-bottom: 1rem;
+}
+
+#skills strong {
+    font-weight: bold;
+}
+
+#skills .italic {
+    font-style: italic!important;
+}
+
+#skills .progress {
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+    overflow: hidden;
+    font-size: .75rem;
+}
+
+#skills .progress .skill-text {
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: var(--point-font);
+    color: var(--first-color);
+}
+
+#skills .skill-proficiency {
+    float: right;
+}
+
+#skills .progress-bar-wrap {
+    background: #e8edf5;
+    height: 10px;
+}
+
+#skills .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: 0.9s;
+    background-color: #4668a2;
 }
 
 @media (min-width: 992px) {
@@ -77,11 +311,38 @@ p {
         flex: 0 0 auto;
         width: 50%;
     }
-}
-
-@media (min-width: 992px) {
     .right-content {
         flex: 0 0 auto;
         width: 50%;
     }
+    .col-half-left {
+        flex: 0 0 auto;
+        width: 58.33333333%;
+    }
+    .col-half-right {
+        flex: 0 0 auto;
+        width: 41.66666667%;
+    }
+    
+}
+
+@media (max-width: 992px) {
+    #why-us .accordion-list {
+        padding: 0 0px 60px 0px;
+    }
+    #why-us .content {
+        padding: 0px;
+    }
+    .order-1 {
+        order: 1!important;
+    }
+    .order-2 {
+        order: 2!important;
+    }
+}
+
+@media (min-width: 1200px){
+    /* #about .container{
+        max-width: 1140px;
+    } */
 }
