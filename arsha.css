@@ -33,6 +33,7 @@ h6 {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
+  padding-top: 60px;
   padding-bottom: 20px;
   position: relative;
   color: var(--first-color);
@@ -74,8 +75,6 @@ h6 {
 .row {
   display: flex;
   flex-wrap: wrap;
-  align-items: stretch;
-  height: auto;
 }
 
 .col-lg-6 {
@@ -118,7 +117,7 @@ icon-img {
 
 .call-action {
   background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)),
-    url(../img/cta-bg.jpg) fixed center center;
+    url(./cta-bg.jpg) fixed center center;
   background-size: cover;
   padding: 100px 0;
 }
