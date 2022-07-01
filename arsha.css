@@ -1446,15 +1446,26 @@ sup {
   justify-content: center;
 }
 
-.contact-section {
+.contact-section1 {
   background-color: #fff;
   border-top: 3px solid;
   border-bottom: 3px solid;
-  border-color: #007aff;
+  border-color: #47b2e4;
   padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-left: 10px;
+}
+.contact-section2 {
+  background-color: #fff;
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+  border-color: #47b2e4;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-left: 10px;
 }
 
@@ -1543,6 +1554,7 @@ sup {
 .message-btn {
   font-size: 16px;
   padding: 12px 35px;
+  margin-top: 20px;
   color: white;
   background: #47b2e4;
   border: 1px solid #47b2e4;
