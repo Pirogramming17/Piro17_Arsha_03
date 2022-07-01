@@ -18,6 +18,7 @@ header {
   display: flex;
   height: 72.5px;
   background-color: rgb(55, 81, 126);
+  z-index: 1;
 }
 
 .center-container {
@@ -197,4 +198,8 @@ header {
   height: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+footer {
+  height: 2000px;
 }
