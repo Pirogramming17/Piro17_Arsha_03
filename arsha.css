@@ -13,13 +13,13 @@
   flex-direction: column;
   align-items: center;
 }
-.section-title {
+.LDHsection-title {
   text-align: center;
   padding-bottom: 30px;
   max-width: 1000px;
 }
 
-.section-title h2 {
+.LDHsection-title h2 {
   font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
