@@ -1033,3 +1033,305 @@ footer {
         max-width: 1140px;
     } */
 }
+sup {
+  position: relative;
+  line-height: 0%;
+  vertical-align: baseline;
+  top: 1.7rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+#team {
+  background-color: #f3f5fa;
+}
+
+.section_title {
+  text-align: center;
+  padding-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.sub_title {
+  display: flex;
+  justify-content: center;
+}
+
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.ml8 {
+  margin-left: 8px;
+}
+
+.section_title h2 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #37517e;
+}
+
+.section_title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section_title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #47b2e4;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.section_title p {
+  width: 1116px;
+  height: 48px;
+  margin-bottom: 0;
+  font-size: 1.6rem;
+  color: #444;
+  font-family: "Opne Sans", sans-serif;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-lg-6 {
+  padding: 10px 12px 10px 12px;
+  width: 50%;
+}
+
+.team .col-lg-6:hover {
+  position: relative;
+  top: -10px;
+  transition-delay: 0.1s;
+}
+
+.team .member .pic {
+  overflow: hidden;
+  width: 180px;
+}
+
+.pic img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 70%;
+  overflow: hidden;
+}
+
+.team .member {
+  position: relative;
+  box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+  padding: 30px;
+  border-radius: 5px;
+  background: #fff;
+  transition: 0.5s;
+}
+
+.team .member .member-info {
+  padding-left: 30px;
+  width: 100%;
+}
+
+.team .member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #37517e;
+  line-height: 1.2;
+}
+
+.team .member .member-info span {
+  display: block;
+  font-size: 1.5rem;
+  padding-bottom: 15px;
+  position: relative;
+  font-weight: 500;
+}
+
+.team .member .member-info span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #cbd6e9;
+  bottom: 0;
+  left: 0;
+}
+
+.team .member .member-info p {
+  margin: 10px 0 5px 0;
+  font-size: 1.4rem;
+  line-height: 20px;
+}
+
+.team .member .member-info .social {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.team .member .member-info .social a {
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 32px;
+  height: 32px;
+  background: #eff2f8;
+}
+
+.team .member .member-info .social a:hover {
+  background: #47b2e4;
+}
+
+.pricing .row {
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3em;
+  flex-basis: auto;
+}
+
+.pricing .col {
+  width: 31%;
+}
+
+.pricing .box {
+  padding: 60px 40px;
+  box-shadow: 0 3px 20px -2px rgb(20 45 100 / 10%);
+  background: #fff;
+  height: 100%;
+  border-top: 4px solid #fff;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+
+.pricing .line_box {
+  border-top-color: #47b2e4;
+}
+
+.pricing h3 {
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 2rem;
+  color: #37517e;
+}
+
+.pricing h4 {
+  font-size: 4.8rem;
+  color: #37517e;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+  margin-bottom: 25px;
+}
+
+.pricing .row .col .box h4 .each_pricing {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+.pricing h4 sup {
+  font-size: 2.8rem;
+}
+
+.pricing h4 span {
+  color: #47b2e4;
+  font-size: 1.8rem;
+  display: block;
+}
+
+.pricing .box ul {
+  margin: 0 0 16px -6px;
+  padding: 20px 0;
+}
+
+.pricing .box li {
+  display: flex;
+}
+
+.pricing ul .check_li {
+  padding: 10px 0 10px 0px;
+  color: #999;
+  font-size: 1.6rem;
+}
+
+.pricing ul .x_li {
+  padding: 15px 0px 15px 0px;
+  color: #ccc;
+  font-size: 1.6rem;
+}
+
+.pricing ul li .check {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url(img-source/img-icon/check.png) 4px 6px no-repeat;
+  background-size: 24px 24px;
+}
+
+.pricing ul li .li_text {
+  position: relative;
+  top: 1rem;
+}
+
+.pricing ul li .x {
+  display: inline-block;
+  width: 12px;
+  height: 13px;
+  background: url(img-source/img-icon/x.png) no-repeat;
+  background-size: 12px 13px;
+  margin-left: 7px;
+  margin-right: 5px;
+}
+
+.pricing .blue_btn {
+  font-size: 1.6rem;
+  padding: 12px 35px;
+  color: white;
+  background: #47b2e4;
+  border: 1px solid #47b2e4;
+  border-radius: 50px;
+  font-family: "Jost", sans-serif;
+}
+
+.pricing .btn {
+  font-size: 1.6rem;
+  padding: 12px 35px;
+  color: #47b2e4;
+  border: 1px solid #47b2e4;
+  border-radius: 50px;
+  font-family: "Jost", sans-serif;
+}
+
+.pricing .btn:hover {
+  background: #47b2e4;
+  color: white;
+}
