@@ -32,6 +32,7 @@ header {
   width: 300px;
   font-family: "Jost", sans-serif;
   font-size: 30px;
+  font-weight: 600;
   color: white;
   margin-right: 80px;
 }
@@ -367,4 +368,30 @@ footer {
 #footer-links {
   width: 261px;
   height: 36px;
+}
+
+#footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 100px;
+  color: white;
+}
+
+#footer-bottom div:nth-child(1) {
+  font-size: 14px;
+  font-family: Open Sans, sans-serif;
+}
+
+#footer-bottom div:nth-child(1) strong {
+  font-weight: 600;
+}
+
+#footer-bottom div:nth-child(2) {
+  font-size: 13px;
+  font-family: Open Sans, sans-serif;
+}
+
+#footer-bottom div:nth-child(2) a {
+  color: #47b2e4;
+  margin-right: 20px;
 }
