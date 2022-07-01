@@ -61,12 +61,13 @@ header {
 #header-navbar > ul > li {
   font-size: 16px;
   color: white;
-  padding: 10px 0px 10px 30px;
-  position: relative;
 }
 
 #header-navbar a {
   transition: all 0.3s;
+  padding: 10px 0px 10px 30px;
+  position: relative;
+  top: 5px;
 }
 
 #header-navbar a:hover {
@@ -78,18 +79,43 @@ header {
   z-index: 3;
   width: 200px;
   height: 224px;
-  background-color: white;
+  background-color: #f3f5fa;
   position: absolute;
   top: 40px;
   left: 18px;
-  border-radius: 1em;
+  border-radius: 0.5em;
   padding-left: 20px;
 }
 
 #dropdown-menu li {
-  padding-top: 25px;
+  padding-top: 20px;
   font-size: 15px;
   color: #5e5e5e;
+}
+
+#dropdown-menu li:hover {
+  color: #47b2e4;
+}
+
+#dropdown-menu li:nth-child(2):hover #deepdropdown {
+  display: block;
+}
+
+#deepdropdown {
+  display: none;
+  z-index: 4;
+  width: 200px;
+  height: 224px;
+  background-color: white;
+  position: absolute;
+  top: 55px;
+  left: 200px;
+  border-radius: 0.5em;
+  padding-left: 20px;
+}
+
+#deepdropdown:hover {
+  display: block;
 }
 
 #header-dropdown:hover #dropdown-menu {
@@ -107,26 +133,27 @@ header {
   left: 3px;
 }
 
+#header-navbar > ul {
+  height: 40px;
+}
+
 #header-navbar > ul > li:first-child {
   color: rgb(68, 156, 204);
 }
 
-#header-navbar > ul > li:last-child {
-  padding: 0px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
 #header-navbar > ul > li:last-child {
   width: 120px;
   margin-left: 20px;
   border: 2px solid;
   border-radius: 2em;
   border-color: rgb(71, 178, 228);
+  position: relative;
+  left: 10px;
 }
 
 #header-navbar > ul > li:last-child a {
   position: relative;
-  left: 15px;
+  right: 13px;
 }
 
 #header-banner {
@@ -207,6 +234,12 @@ header {
   justify-content: center;
   align-items: center;
   margin-right: 30px;
+  transition: all 0.3s;
+}
+
+#header-banner-button > div > div:hover {
+  border-color: #209dd8;
+  background-color: #209dd8;
 }
 
 #header-banner-button > div > a {
@@ -1126,12 +1159,11 @@ sup {
 .col-lg-6 {
   padding: 10px 12px 10px 12px;
   width: 50%;
+  transition: all 0.5s;
 }
 
 .team .col-lg-6:hover {
-  position: relative;
-  top: -10px;
-  transition-delay: 0.1s;
+  transform: translateY(-10px);
 }
 
 .team .member .pic {
