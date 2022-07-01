@@ -645,6 +645,13 @@ footer {
   display: flex;
 }
 
+#footer-top-container a {
+  transition: all 0.3s;
+}
+#footer-top-container a:hover {
+  color: #47b2e4;
+}
+
 #footer-top-container > div:last-child p {
   font-size: 14px;
   line-height: 24px;
