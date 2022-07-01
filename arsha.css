@@ -1,2 +1,247 @@
-* {
+@import "variable.css";
+@import "reset.css";
+
+body,
+html {
+  font-family: var(--body-font);
+  font-size: var(--body-font-size);
+  font-weight: var(--body-font-weight);
+  line-height: var(--body-line-height);
+  color: var(--gray-2);
+}
+
+.services {
+  background-color: #f3f5fa;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--main-font);
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: var(--title-font-size);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: var(--first-color);
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--second-color);
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.section-title p {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  height: auto;
+}
+
+.col-lg-6 {
+  padding: 10px 12px 10px 12px;
+  width: 50%;
+}
+/* @media (min-width: 768px) {}
+.col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
+} */
+
+.services .icon-box {
+  box-shadow: 0px 0 25px 0 rgb(0 0 0 / 10%);
+  background: var(--white-color);
+  padding: 50px 30px;
+  transition: all ease-in-out 0.4s;
+}
+
+icon-img {
+  /* not working */
+  fill: var(--second-color);
+}
+
+.services .icon-name {
+  color: var(--first-color);
+  /* transition: ease-in-out 0.3s; */
+}
+
+.services .icon-name:hover {
+  color: var(--second-color);
+  /* TODO: only letter changes color? */
+}
+
+@media (max-width: 1024px) {
+  .call-action {
+    background-attachment: scroll;
+  }
+}
+
+.call-action {
+  background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)),
+    url(../img/cta-bg.jpg) fixed center center;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+.call-action .left-content {
+  text-align: left;
+  display: inline-block;
+  vertical-align: center;
+}
+
+@media (min-width: 992px) {
+  .left-content {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+}
+
+.cta {
+  margin-left: 100px;
+}
+
+.call-action h3 {
+  color: var(--white-color);
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.call-action p {
+  color: var(--white-color);
+}
+
+@media (min-width: 992px) {
+  .right-content {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+}
+
+.call-action .cta-btn {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid var(--white-color);
+  color: var(--white-color);
+  vertical-align: middle;
+  margin-top: 26px;
+  /* idk how to make the transition smoother... rip */
+}
+
+.portfolio #options {
+  list-style: none;
+  margin-bottom: 20px;
+  justify-content: center !important;
+  display: flex !important;
+}
+
+.call-action .cta-btn:hover,
+.portfolio #options li:hover,
+.portfolio #options li.filter-active {
+  background: var(--second-color);
+  color: var(--white-color);
+  border-color: var(--second-color);
+}
+
+.portfolio #options li {
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px 5px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--gray-2);
+  transition: all 0.3s;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.portfolio .options {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.portfolio .options li {
+  display: inline-block;
+  background: var(--second-color);
+  color: var(--white-color);
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px 5px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--gray-2);
+  transition: all 0.3s;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+#p-images {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.p-item {
+  margin: 2%;
+  width: 94%;
+  display: block;
+  margin-bottom: 30px;
+  flex: 0 0 auto;
+}
+
+#p-images .column {
+  display: flex;
+  flex-direction: column;
+  width: 33.33333333%;
 }
