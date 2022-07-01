@@ -1,14 +1,25 @@
 @import "reset.css";
 
 #faq {
+  background-color: #f3f5fa;
+}
+
+.main-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-left: 100px;
+  margin-right: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f3f5fa;
 }
-justify-content: center;
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
 .section-title h2 {
-  ont-size: 32px;
+  font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -16,4 +27,26 @@ justify-content: center;
   position: relative;
   color: #37517e;
   font-family: "Jost", sans-serif;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-discription {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+  font-size: 1rem;
+  font-weight: 400;
+  line-weight: 1.5;
+}
+.faq-list li {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 0 30px;
+  outline: none;
+  cursor: pointer;
 }
