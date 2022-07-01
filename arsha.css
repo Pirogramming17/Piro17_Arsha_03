@@ -41,17 +41,49 @@ header {
   width: 1200px;
 }
 
-#header-navbar ul {
+#header-navbar > ul {
   display: flex;
 }
 
-#header-navbar ul li {
+#header-navbar > ul > li {
   font-size: 16px;
   color: white;
   padding: 10px 0px 10px 30px;
+  position: relative;
 }
 
-#header-navbar ul li:nth-child(6) {
+#header-navbar a {
+  transition: all 0.3s;
+}
+
+#header-navbar a:hover {
+  color: #47b2e4;
+}
+
+#dropdown-menu {
+  display: none;
+  z-index: 3;
+  width: 200px;
+  height: 224px;
+  background-color: white;
+  position: absolute;
+  top: 40px;
+  left: 18px;
+  border-radius: 1em;
+  padding-left: 20px;
+}
+
+#dropdown-menu li {
+  padding-top: 25px;
+  font-size: 15px;
+  color: #5e5e5e;
+}
+
+#header-dropdown:hover #dropdown-menu {
+  display: block;
+}
+
+#header-navbar > ul > li:nth-child(6) {
   position: relative;
   bottom: 1px;
 }
@@ -62,16 +94,16 @@ header {
   left: 3px;
 }
 
-#header-navbar ul li:first-child {
+#header-navbar > ul > li:first-child {
   color: rgb(68, 156, 204);
 }
 
-#header-navbar ul li:last-child {
+#header-navbar > ul > li:last-child {
   padding: 0px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-#header-navbar ul li:last-child {
+#header-navbar > ul > li:last-child {
   width: 120px;
   margin-left: 20px;
   border: 2px solid;
@@ -79,7 +111,7 @@ header {
   border-color: rgb(71, 178, 228);
 }
 
-#header-navbar ul li:last-child a {
+#header-navbar > ul > li:last-child a {
   position: relative;
   left: 15px;
 }
