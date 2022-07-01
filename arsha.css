@@ -6,7 +6,17 @@
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+#about h1, h2, h3, h4, h5, h6 {
+    font-family: var(--main-font);
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+#skills h1, h2, h3, h4, h5, h6 {
+    font-family: var(--main-font);
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+#why-us h1, h2, h3, h4, h5, h6 {
     font-family: var(--main-font);
     line-height: 1.2;
     margin-bottom: 0.5rem;
@@ -22,11 +32,25 @@ body {
     color: var(--gray-2);
 }
 
-.container {
+#about .container {
+    margin: 0 100px;
+}
+#skills .container {
+    margin: 0 100px;
+}
+#why-us .container {
     margin: 0 100px;
 }
 
-section {
+#about {
+    padding: 60px 0;
+    overflow: hidden;
+}
+#skills {
+    padding: 60px 0;
+    overflow: hidden;
+}
+#why-us {
     padding: 60px 0;
     overflow: hidden;
 }
@@ -36,7 +60,17 @@ section {
     margin-bottom: 1rem;
 }
 
-.row {
+#about .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+#skills .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+#why-us .row {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -52,7 +86,7 @@ section {
     padding-bottom: 30px;
 }
 
-.section-title h2 {
+#about .section-title h2 {
     font-size: var(--title-font-size);
     font-weight: bold;
     text-transform: uppercase;
@@ -62,7 +96,7 @@ section {
     color: var(--first-color);
 }
 
-.section-title h2::before {
+#about .section-title h2::before {
     content: "";
     position: absolute;
     display: block;
@@ -73,7 +107,7 @@ section {
     left: calc(50% - 60px);
 }
 
-.section-title h2::after {
+#about .section-title h2::after {
     content: "";
     position: absolute;
     display: block;
