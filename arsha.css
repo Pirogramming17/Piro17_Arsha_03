@@ -4,7 +4,7 @@
   background-color: #f3f5fa;
 }
 
-.main-section {
+.faq-main {
   padding-top: 60px;
   padding-bottom: 60px;
   margin-left: 100px;
@@ -16,6 +16,7 @@
 .section-title {
   text-align: center;
   padding-bottom: 30px;
+  max-width: 1000px;
 }
 
 .section-title h2 {
@@ -26,9 +27,8 @@
   padding-bottom: 20px;
   position: relative;
   color: #37517e;
-  font-family: "Jost", sans-serif;
+  font-family: "Jost";
   text-align: center;
-  padding-bottom: 30px;
 }
 
 .section-discription {
@@ -36,17 +36,153 @@
   color: #444444;
   font-size: 1rem;
   font-weight: 400;
-  line-weight: 1.5;
 }
 .faq-list li {
   background-color: white;
-  padding: 20px;
   margin-bottom: 15px;
+  padding: 20px 35px 20px 35px;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  padding: 0 30px;
   outline: none;
   cursor: pointer;
+  position: relative;
+  width: 900;
+}
+
+.faq-list ul li .q-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(img-source/question-circle.svg) 0px 0px no-repeat;
+  background-size: 20px 20px;
+  position: absolute;
+  top: 20px;
+  left: 11px;
+  color: #6182ba;
+}
+.faq-list ul li .check-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url(img-source/chevron-down.svg) 0px 7px no-repeat;
+  background-size: 16px 24px;
+  position: absolute;
+  top: 12px;
+  right: 0;
+}
+
+#cntct {
+}
+
+.cntct-main {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-detail {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-section {
+  background-color: #fff;
+  border-top: 3px;
+  border-bottom: 3px;
+  border-color: #007aff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-info {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #37517e;
+  display: block;
+}
+.contact-detail {
+  padding: 0 0 10px 27px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #6182ba;
+  font-family: "Open Sans", sans-serif;
+  display: block;
+}
+
+.location-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(img-source/geo-alt.svg) 0px 0px no-repeat;
+  background-size: 20px 20px;
+}
+.email-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(img-source/envelope.svg) 0px 0px no-repeat;
+  background-size: 20px 20px;
+}
+.call-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(img-source/phone.svg) 0px 0px no-repeat;
+  background-size: 20px 20px;
+}
+
+#map-img {
+  width: 391px;
+  height: 290px;
+  object-fit: fill;
+}
+
+#fieldset h5 {
+  display: inline-block;
+}
+.name-email {
+  display: inline-block;
+}
+
+.input-sm {
+  width: 233px;
+  height: 44px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin: 10px 5px 10px 0;
+}
+.input-md {
+  width: 476px;
+  height: 44px;
+  border-radius: 4px;
+  margin: 10px 5px 10px 0;
+}
+.input-lg {
+  width: 476px;
+  height: 232px;
+  border-radius: 4px;
+  margin: 10px 5px 10px 0;
+}
+
+.button-position {
+  display: flex;
+  justify-content: center;
+}
+
+.massage-btn {
+  background-color: #47b2e4;
+  border: 0;
+  padding: 12px 34px;
+  color: #fff;
+  border-radius: 50px;
 }
