@@ -49,6 +49,17 @@ header {
   padding: 10px 0px 10px 30px;
 }
 
+#header-navbar ul li:nth-child(6) {
+  position: relative;
+  bottom: 1px;
+}
+
+#header-navbar img {
+  position: relative;
+  top: 2px;
+  left: 3px;
+}
+
 #header-navbar ul li:first-child {
   color: rgb(68, 156, 204);
 }
@@ -122,11 +133,68 @@ header {
 }
 
 #header-banner-button {
-  padding-top: 50px;
+  padding-top: 70px;
+  padding-left: 10px;
   font-size: 18px;
   color: white;
+  display: flex;
 }
 
-#header-banner-button a {
-  margin-right: 20px;
+#header-banner-button a:last-child {
+  font-family: "Open sans", sans-serif;
+}
+
+#header-banner-button > div {
+  display: flex;
+  justify-content: center;
+}
+
+#header-banner-button > div > div {
+  border: 2px solid;
+  border-radius: 2em;
+  border-color: #47b2e4;
+  background-color: #47b2e4;
+  width: 140px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+
+#header-banner-button > div > a {
+  position: relative;
+  bottom: 3px;
+}
+
+#header-banner-button img {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  top: 10px;
+}
+
+#header-clients {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 95px;
+  background-color: #f3f5fa;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+#header-clients div {
+  width: 74px;
+  height: 56px;
+  position: relative;
+}
+#header-clients img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
