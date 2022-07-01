@@ -145,7 +145,7 @@
   object-fit: fill;
 }
 
-#fieldset h5 {
+.contact-section fieldset > h5 {
   display: inline-block;
 }
 .name-email {
