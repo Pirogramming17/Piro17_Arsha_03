@@ -79,11 +79,11 @@ header {
   z-index: 3;
   width: 200px;
   height: 224px;
-  background-color: white;
+  background-color: #f3f5fa;
   position: absolute;
   top: 40px;
   left: 18px;
-  border-radius: 1em;
+  border-radius: 0.5em;
   padding-left: 20px;
 }
 
@@ -97,20 +97,24 @@ header {
   color: #47b2e4;
 }
 
-#dropdown-menu ul {
+#dropdown-menu li:nth-child(2):hover #deepdropdown {
+  display: block;
+}
+
+#deepdropdown {
   display: none;
   z-index: 4;
   width: 200px;
   height: 224px;
   background-color: white;
   position: absolute;
-  top: 40px;
-  left: 18px;
-  border-radius: 1em;
+  top: 55px;
+  left: 200px;
+  border-radius: 0.5em;
   padding-left: 20px;
 }
 
-#dropdown-menu ul:hover {
+#deepdropdown:hover {
   display: block;
 }
 
