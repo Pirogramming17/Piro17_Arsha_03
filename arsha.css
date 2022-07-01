@@ -92,13 +92,14 @@
 
 .contact-section {
   background-color: #fff;
-  border-top: 3px;
-  border-bottom: 3px;
+  border-top: 3px solid;
+  border-bottom: 3px solid;
   border-color: #007aff;
   padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-left: 10px;
 }
 
 .contact-info {
@@ -172,11 +173,6 @@
   height: 232px;
   border-radius: 4px;
   margin: 10px 5px 10px 0;
-}
-
-.button-position {
-  display: flex;
-  justify-content: center;
 }
 
 .massage-btn {
