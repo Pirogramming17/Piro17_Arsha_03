@@ -27,12 +27,10 @@
   padding-bottom: 20px;
   position: relative;
   color: #37517e;
-  font-family: "Jost";
   text-align: center;
 }
 
 .section-discription {
-  font-family: "Open Sans", sans-serif;
   color: #444444;
   font-size: 1rem;
   font-weight: 400;
@@ -41,7 +39,6 @@
   background-color: white;
   margin-bottom: 15px;
   padding: 20px 35px 20px 35px;
-  font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -74,6 +71,7 @@
 }
 
 #cntct {
+  background-color: #f8f9fa;
 }
 
 .cntct-main {
@@ -116,7 +114,6 @@
   line-height: 24px;
   font-weight: 500;
   color: #6182ba;
-  font-family: "Open Sans", sans-serif;
   display: block;
 }
 
