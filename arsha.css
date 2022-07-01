@@ -1,2 +1,143 @@
-* {
+@import "reset.css";
+section {
+  width: 90%;
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+#team {
+  background-color: #f3f5fa;
+}
+
+.section_title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.ml8 {
+  margin-left: 8px;
+}
+
+.section_title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #37517e;
+}
+
+.section_title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section_title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #47b2e4;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.section_title p {
+  width: 1116px;
+  height: 48px;
+  margin-bottom: 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-lg-6 {
+  padding: 10px 12px 10px 12px;
+  width: 50%;
+}
+
+.pic img {
+  width: 145.17px;
+  height: 145.17px;
+  border-radius: 70%;
+  overflow: hidden;
+}
+
+.team .member {
+  position: relative;
+  box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+  padding: 30px;
+  border-radius: 5px;
+  background: #fff;
+  transition: 0.5s;
+}
+.team .member .member-info {
+  padding-left: 30px;
+}
+.team .member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #37517e;
+}
+
+.team .member .member-info span {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 500;
+}
+
+.team .member .member-info span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #cbd6e9;
+  bottom: 0;
+  left: 0;
+}
+
+.team .member .member-info p {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+
+.team .member .member-info .social {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.team .member .member-info .social a {
+  transition: ease-in-out 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 32px;
+  height: 32px;
+  background: #eff2f8;
 }
