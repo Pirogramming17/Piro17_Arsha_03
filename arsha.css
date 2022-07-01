@@ -122,6 +122,10 @@ header {
   display: block;
 }
 
+#header-navbar > ul > li:nth-child(1) {
+  color: #47b2e4;
+}
+
 #header-navbar > ul > li:nth-child(6) {
   position: relative;
   bottom: 1px;
@@ -135,10 +139,6 @@ header {
 
 #header-navbar > ul {
   height: 40px;
-}
-
-#header-navbar > ul > li:first-child {
-  color: rgb(68, 156, 204);
 }
 
 #header-navbar > ul > li:last-child {
