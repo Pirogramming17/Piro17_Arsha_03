@@ -1,1 +1,19 @@
 @import "reset.css";
+
+#faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3f5fa;
+}
+justify-content: center;
+.section-title h2 {
+  ont-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #37517e;
+  font-family: "Jost", sans-serif;
+}
