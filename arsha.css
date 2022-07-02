@@ -1461,6 +1461,28 @@ sup {
   text-align: center;
 }
 
+.LDHsection-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.LDHsection-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #47b2e4;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
 .section-discription {
   color: #444444;
   font-size: 16px;
@@ -1519,15 +1541,26 @@ sup {
   justify-content: center;
 }
 
-.contact-section {
+.contact-section1 {
   background-color: #fff;
   border-top: 3px solid;
   border-bottom: 3px solid;
-  border-color: #007aff;
+  border-color: #47b2e4;
   padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-left: 10px;
+}
+.contact-section2 {
+  background-color: #fff;
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+  border-color: #47b2e4;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-left: 10px;
 }
 
@@ -1582,6 +1615,16 @@ sup {
 .name-email {
   display: inline-block;
 }
+.input-subject {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.input-message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
 .input-sm {
   width: 233px;
@@ -1604,9 +1647,11 @@ sup {
 }
 
 .message-btn {
-  background-color: #47b2e4;
-  border: 0;
-  padding: 12px 34px;
-  color: #fff;
+  font-size: 16px;
+  padding: 12px 35px;
+  margin-top: 20px;
+  color: white;
+  background: #47b2e4;
+  border: 1px solid #47b2e4;
   border-radius: 50px;
 }
