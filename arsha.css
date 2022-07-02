@@ -1,5 +1,5 @@
 @import "reset.css";
-@import "variable.css";
+@import "./variables.css";
 
 @keyframes up-down {
   0% {
@@ -295,6 +295,8 @@ h6 {
 .section-title {
   text-align: center;
   padding-bottom: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .section-title h2 {
@@ -302,6 +304,7 @@ h6 {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
+  padding-top: 60px;
   padding-bottom: 20px;
   position: relative;
   color: var(--first-color);
@@ -335,41 +338,59 @@ h6 {
   left: calc(50% - 20px);
 }
 
-.section-title p {
-  margin-left: 100px;
-  margin-right: 100px;
+.col-lg-6 h3 {
+  margin-bottom: 15px;
 }
 
-.col-lg-6 {
-  padding: 10px 12px 10px 12px;
-  width: 50%;
+.col-lg-6 h3,
+.col-lg-6 p {
+  text-align: left;
+  font-family: var(--main-font);
+  line-height: 1.2;
+  color: var(--gray-2);
 }
-/* @media (min-width: 768px) {}
-.col-md-6 {
-    flex: 0 0 auto;
-    width: 50%;
-} */
+
+.col-lg-6 .tacho {
+  width: 50px;
+  height: 50px;
+}
+
+.services .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services .col-lg-6 {
+  box-shadow: 0px 0 25px 0 rgb(0 0 0 / 10%);
+  padding: 10px 12px 10px 12px;
+  width: 20%;
+  margin: 10px;
+  background: var(--white-color);
+  margin-bottom: 60px;
+  transition-duration: 0.3s;
+}
+
+.services .col-lg-6:hover {
+  opacity: 1;
+  transform: translateY(-10px);
+  transition-delay: 0.1s;
+  transition-timing-function: ease-in-out;
+}
 
 .services .icon-box {
-  box-shadow: 0px 0 25px 0 rgb(0 0 0 / 10%);
-  background: var(--white-color);
   padding: 50px 30px;
   transition: all ease-in-out 0.4s;
 }
 
-icon-img {
-  /* not working */
-  fill: var(--second-color);
-}
-
 .services .icon-name {
   color: var(--first-color);
-  /* transition: ease-in-out 0.3s; */
+  font-size: 25px;
+  font-weight: 500;
 }
 
 .services .icon-name:hover {
   color: var(--second-color);
-  /* TODO: only letter changes color? */
 }
 
 @media (max-width: 1024px) {
@@ -380,7 +401,7 @@ icon-img {
 
 .call-action {
   background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)),
-    url(../img/cta-bg.jpg) fixed center center;
+    url(./cta-bg.jpg) fixed center center;
   background-size: cover;
   padding: 100px 0;
 }
@@ -392,7 +413,7 @@ icon-img {
 }
 
 @media (min-width: 992px) {
-  .left-content {
+  .call-action .left-content {
     flex: 0 0 auto;
     width: 75%;
   }
@@ -400,6 +421,11 @@ icon-img {
 
 .cta {
   margin-left: 100px;
+}
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .call-action h3 {
@@ -413,9 +439,9 @@ icon-img {
 }
 
 @media (min-width: 992px) {
-  .right-content {
+  .call-action .right-content {
     flex: 0 0 auto;
-    width: 25%;
+    width: 221px;
   }
 }
 
@@ -433,7 +459,6 @@ icon-img {
   color: var(--white-color);
   vertical-align: middle;
   margin-top: 26px;
-  /* idk how to make the transition smoother... rip */
 }
 
 .portfolio #options {
@@ -492,6 +517,9 @@ icon-img {
   position: relative;
   display: flex;
   justify-content: center;
+  padding-bottom: 60px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .p-item {
@@ -500,9 +528,15 @@ icon-img {
   display: block;
   margin-bottom: 30px;
   flex: 0 0 auto;
+  transition-duration: 0.3s;
 }
 
-#p-images .column {
+.p-item:hover {
+  transform: scale(1.2);
+  transition: transform 0.4s ease;
+}
+
+#p-images .columns {
   display: flex;
   flex-direction: column;
   width: 33.33333333%;
