@@ -1,0 +1,24 @@
+/* color */
+:root {
+    --first-color: #37517e;
+    --second-color: #47b2e4;
+    --gray-1: #343a40;
+    --gray-2: #444444;
+    --gray-3: #777777;
+    --gray-4: #848484;
+    --gray-5: #999;
+    --gray-6: #ccc;
+    --white-color: #fff;
+    --background-color: #f3f5fa;
+}
+
+/* font */
+:root {
+    --body-font : "Open Sans", sans-serif;
+    --main-font : "Jost", sans-serif;
+    --point-font : "Poppins", sans-serif;
+    --title-font-size : 32px;
+    --body-font-size : 1rem;
+    --body-font-weight: 400;
+    --body-line-height: 1.5;
+}
