@@ -786,7 +786,7 @@ h6 {
 }
 
 #about {
-  padding: 60px 0;
+  padding-bottom: 60px;
   overflow: hidden;
 }
 #skills {
@@ -1027,11 +1027,9 @@ h6 {
   color: var(--first-color);
 }
 
-
 #skills strong {
   font-weight: bold;
 }
-
 
 #skills .progress {
   height: 60px;
@@ -1060,7 +1058,6 @@ h6 {
   background: #e8edf5;
   height: 10px;
 }
-
 
 #skills .progress-bar {
   width: 1px;
@@ -1151,6 +1148,7 @@ sup {
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 20px;
+  padding-top: 60px;
   position: relative;
   color: #37517e;
 }
@@ -1298,44 +1296,43 @@ sup {
 .pricing-container {
   width: 100%;
   margin-right: auto;
-    margin-left: auto;
+  margin-left: auto;
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
   .pricing-container {
-      max-width: 1140px;
+    max-width: 1140px;
   }
 }
 
 @media (max-width: 992px) {
   .pricing .box {
-      max-width: 60%;
-      margin: 0 auto 30px auto;
+    max-width: 60%;
+    margin: 0 auto 30px auto;
   }
-  .pricing-container{
+  .pricing-container {
     max-width: 960px;
   }
 }
 
-@media (max-width: 767px){
+@media (max-width: 767px) {
   .pricing .box {
-      max-width: 80%;
-      margin: 0 auto 30px auto;
+    max-width: 80%;
+    margin: 0 auto 30px auto;
   }
 }
 
-@media (min-width: 992px){
+@media (min-width: 992px) {
   #pricing .col {
     flex: 0 0 auto;
     width: 33.33333333%;
   }
 }
 
-@media (max-width: 576px){
+@media (max-width: 576px) {
   .pricing-container {
-      max-width: 540px;
+    max-width: 540px;
   }
-
 }
 
 .pricing .row {
